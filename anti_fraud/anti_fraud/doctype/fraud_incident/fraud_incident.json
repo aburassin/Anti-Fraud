@@ -1,0 +1,305 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:incident_number",
+ "creation": "2024-07-01 12:47:23.335631",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "incident_number",
+  "incident_date",
+  "branch_name",
+  "branch_data",
+  "incident_type",
+  "nationalty",
+  "names_of_the_suspects",
+  "column_break_0d0qm",
+  "amount",
+  "document_submission_method",
+  "document_submission",
+  "document_verification",
+  "document_verify",
+  "financial_fraud_method",
+  "phone_number",
+  "id_number",
+  "details_section",
+  "incident_details",
+  "subsequent_actions",
+  "column_break_dgyjv",
+  "actions_taken",
+  "info_section",
+  "reporting_channel",
+  "reporting_channels",
+  "other_names_involved",
+  "report_date",
+  "fake_documents",
+  "fake_document",
+  "suggestions",
+  "column_break_petsk",
+  "report_author",
+  "loan_request_number",
+  "add_list",
+  "added_by",
+  "reviewed_by",
+  "report_status",
+  "document_tab",
+  "document",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "incident_number",
+   "fieldtype": "Data",
+   "label": "Incident Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "incident_date",
+   "fieldtype": "Date",
+   "label": "Incident Date"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Link",
+   "label": "Branch Name",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "incident_type",
+   "fieldtype": "Select",
+   "label": "Incident Type",
+   "options": "\u0627\u062d\u062a\u064a\u0627\u0644 \u062e\u0627\u0631\u062c\u064a\n\u0644\u0627 \u064a\u0648\u062c\u062f"
+  },
+  {
+   "fieldname": "nationalty",
+   "fieldtype": "Data",
+   "label": "Nationalty"
+  },
+  {
+   "fieldname": "names_of_the_suspects",
+   "fieldtype": "Data",
+   "label": "Names of the suspects"
+  },
+  {
+   "fieldname": "column_break_0d0qm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "document_submission_method",
+   "fieldtype": "Select",
+   "label": "Document Submission Method",
+   "options": "Manual\nDigital"
+  },
+  {
+   "fieldname": "document_submission",
+   "fieldtype": "Small Text",
+   "label": "Document Submission "
+  },
+  {
+   "fieldname": "document_verification",
+   "fieldtype": "Select",
+   "label": "Document Verification",
+   "options": "Pending\nVerified"
+  },
+  {
+   "fieldname": "document_verify",
+   "fieldtype": "Small Text",
+   "label": "Document Verify",
+   "read_only": 1
+  },
+  {
+   "fieldname": "financial_fraud_method",
+   "fieldtype": "Select",
+   "label": "Financial Fraud Method",
+   "options": "\u062a\u0648\u0638\u064a\u0641 \u0648\u0647\u0645\u064a\n\u0627\u0646\u062a\u062d\u0627\u0644 \u0634\u062e\u0635\u064a\u0629 \u0645\u0648\u0638\u0641 \u062d\u0643\u0648\u0645\u064a / \u062c\u0647\u0629 \u062d\u0643\u0648\u0645\u064a\u0629\n\u0627\u062e\u062a\u0631\u0627\u0642 \u0627\u0644\u0627\u062c\u0647\u0632\u0629 \u0648 \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a\n\u0627\u0646\u062a\u062d\u0627\u0644 \u0634\u062e\u0635\u064a\u0629 \u0627\u0644\u0627\u0642\u0627\u0631\u0628 \u0627\u0648 \u0627\u0644\u0627\u0635\u062f\u0642\u0627\u0621\n\u0633\u0631\u0642\u0629 \u0627\u0644\u0647\u0648\u064a\u0629 / \u0627\u0644\u0627\u0642\u0627\u0645\u0629\n\u0627\u0646\u062a\u062d\u0627\u0644 \u0634\u0631\u0643\u0627\u062a \u062a\u0645\u0648\u064a\u0644\n\u0627\u0644\u0639\u0645\u064a\u0644 \u064a\u0642\u062f\u0645 \u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0645\u0632\u0648\u0631\u0629\n\u0627\u0644\u0648\u0633\u0627\u0637\u0629 \u0627\u0644\u0645\u0627\u0644\u064a\u0629\n\u0634\u0631\u0643\u0629 \u0648\u0647\u0645\u064a\u0629\n\u0627\u062e\u0631\u0649"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "National ID"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "incident_details",
+   "fieldtype": "Small Text",
+   "label": "Incident Details"
+  },
+  {
+   "fieldname": "subsequent_actions",
+   "fieldtype": "Small Text",
+   "label": "Subsequent Actions"
+  },
+  {
+   "fieldname": "column_break_dgyjv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actions_taken",
+   "fieldtype": "Small Text",
+   "label": "Actions Taken"
+  },
+  {
+   "fieldname": "info_section",
+   "fieldtype": "Section Break",
+   "label": "Info"
+  },
+  {
+   "fieldname": "reporting_channel",
+   "fieldtype": "Select",
+   "label": "Reporting Channel",
+   "options": "Email\nPhone\nIn-Person"
+  },
+  {
+   "fieldname": "reporting_channels",
+   "fieldtype": "Data",
+   "label": "Reporting Channels",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_names_involved",
+   "fieldtype": "Data",
+   "label": "Other Names Involved"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "fake_documents",
+   "fieldtype": "Table MultiSelect",
+   "label": "Fake Documents",
+   "options": "Fake Documents"
+  },
+  {
+   "fieldname": "fake_document",
+   "fieldtype": "Data",
+   "label": "Fake Document",
+   "read_only": 1
+  },
+  {
+   "fieldname": "suggestions",
+   "fieldtype": "Small Text",
+   "label": "Suggestions"
+  },
+  {
+   "fieldname": "column_break_petsk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_author",
+   "fieldtype": "Data",
+   "label": "Report Author"
+  },
+  {
+   "fieldname": "loan_request_number",
+   "fieldtype": "Small Text",
+   "label": "Loan Request Number"
+  },
+  {
+   "fieldname": "add_list",
+   "fieldtype": "Select",
+   "label": "Add List",
+   "options": "\u0627\u0644\u062d\u0638\u0631\n\u0627\u0644\u0645\u0631\u0627\u0642\u0628\u0629\n\u0644\u0627 \u064a\u0648\u062c\u062f"
+  },
+  {
+   "fieldname": "added_by",
+   "fieldtype": "Data",
+   "label": "Added By"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Data",
+   "label": "Reviewed By"
+  },
+  {
+   "fieldname": "report_status",
+   "fieldtype": "Data",
+   "label": "Report Status",
+   "options": "\u0645\u063a\u0644\u0642\u0629\n\u0642\u0627\u0626\u0645\u0629"
+  },
+  {
+   "fieldname": "document_tab",
+   "fieldtype": "Tab Break",
+   "label": "Document"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Table",
+   "label": "Document",
+   "options": "Document Verification"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fraud Incident",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fraud Incident",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "branch_data",
+   "fieldtype": "Small Text",
+   "label": "Branch Data",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-01 12:49:01.956573",
+ "modified_by": "Administrator",
+ "module": "Anti Fraud",
+ "name": "Fraud Incident",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
