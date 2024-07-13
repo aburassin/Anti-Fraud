@@ -2,14 +2,14 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:incident_number",
+ "autoname": "format:FI-{case_fraud}-{DD}-{MM}-{YYYY}",
  "creation": "2024-07-01 12:47:23.335631",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "incident_number",
+  "case_fraud",
   "incident_date",
   "branch_name",
   "branch_data",
@@ -50,12 +50,6 @@
   "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "incident_number",
-   "fieldtype": "Data",
-   "label": "Incident Number",
-   "unique": 1
-  },
   {
    "fieldname": "incident_date",
    "fieldtype": "Date",
@@ -271,16 +265,29 @@
    "fieldtype": "Small Text",
    "label": "Branch Data",
    "read_only": 1
+  },
+  {
+   "fieldname": "case_fraud",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Incident Number",
+   "read_only": 1,
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2024-07-01 12:49:01.956573",
+ "links": [
+  {
+   "link_doctype": "Investigation",
+   "link_fieldname": "fraud_incident"
+  }
+ ],
+ "modified": "2024-07-13 21:43:16.949911",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Fraud Incident",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

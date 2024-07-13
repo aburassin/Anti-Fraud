@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-13 22:02:11.865733",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "column_break_ffd19",
+  "posting_datetime",
+  "column_break_dvmub",
+  "investigation",
+  "actions_section",
+  "action",
+  "score_section",
+  "scoring",
+  "column_break_qwh1p",
+  "potential_fraud",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "investigation",
+   "fieldtype": "Link",
+   "label": "Investigation",
+   "options": "Investigation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Investigation Action",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "actions_section",
+   "fieldtype": "Section Break",
+   "label": "Actions"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Table",
+   "options": "Action List"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Later Action\nInstant Action",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ffd19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "now",
+   "fieldname": "posting_datetime",
+   "fieldtype": "Datetime",
+   "label": "Posting DateTime",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dvmub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "score_section",
+   "fieldtype": "Section Break",
+   "label": "Score"
+  },
+  {
+   "fieldname": "scoring",
+   "fieldtype": "Data",
+   "label": "Scoring",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qwh1p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "potential_fraud",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Potential Fraud",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-14 00:33:39.832316",
+ "modified_by": "Administrator",
+ "module": "Anti Fraud",
+ "name": "Investigation Action",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
