@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-13 22:46:30.435209",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "instant_action_section",
+  "instant_action",
+  "instant_action_score_section",
+  "instant_action_score",
+  "column_break_golf5",
+  "later_action_section",
+  "later_action",
+  "later_action_score_section",
+  "later_action_score",
+  "column_break_vmmyd"
+ ],
+ "fields": [
+  {
+   "fieldname": "instant_action_section",
+   "fieldtype": "Section Break",
+   "label": "Instant Action"
+  },
+  {
+   "fieldname": "instant_action",
+   "fieldtype": "Table",
+   "options": "Instant Action List"
+  },
+  {
+   "fieldname": "instant_action_score_section",
+   "fieldtype": "Section Break",
+   "label": "Instant Action Score"
+  },
+  {
+   "fieldname": "instant_action_score",
+   "fieldtype": "Table",
+   "label": "Instant Action Score",
+   "options": "Instant Action Score",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_golf5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "later_action_section",
+   "fieldtype": "Section Break",
+   "label": "Later Action"
+  },
+  {
+   "fieldname": "later_action",
+   "fieldtype": "Table",
+   "options": "Later Action List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "later_action_score_section",
+   "fieldtype": "Section Break",
+   "label": "Later Action Score"
+  },
+  {
+   "fieldname": "column_break_vmmyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "later_action_score",
+   "fieldtype": "Table",
+   "label": "Later Action Score",
+   "options": "Instant Action Score",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-13 23:40:46.580191",
+ "modified_by": "Administrator",
+ "module": "Anti Fraud",
+ "name": "Investigation Action Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
