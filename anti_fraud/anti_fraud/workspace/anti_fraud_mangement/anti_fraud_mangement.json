@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"hIV-2aSJ_g\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Fraud Fighters Hub</span>\",\"col\":12}},{\"id\":\"Nuo4Tf8fCE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case Fraud\",\"col\":3}},{\"id\":\"njcPWcBg9B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Incident\",\"col\":3}},{\"id\":\"wV8hng2tM-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Investigation\",\"col\":3}},{\"id\":\"PfaV2h26VW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Investigation Action\",\"col\":3}},{\"id\":\"12uV29CkNl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"2nPC4EoCYs\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"b-20oOKeiL\",\"type\":\"card\",\"data\":{\"card_name\":\"Setting\",\"col\":4}}]",
+ "content": "[{\"id\":\"hIV-2aSJ_g\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Fraud Fighters Hub</span>\",\"col\":12}},{\"id\":\"Nuo4Tf8fCE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Case\",\"col\":3}},{\"id\":\"njcPWcBg9B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Incident\",\"col\":3}},{\"id\":\"wV8hng2tM-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Investigation\",\"col\":3}},{\"id\":\"PfaV2h26VW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Investigation Action\",\"col\":3}},{\"id\":\"12uV29CkNl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"2nPC4EoCYs\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"b-20oOKeiL\",\"type\":\"card\",\"data\":{\"card_name\":\"Setting\",\"col\":4}}]",
  "creation": "2024-07-13 20:43:01.078154",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,55 +12,6 @@
  "is_hidden": 0,
  "label": "Anti-Fraud Mangement",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Master Data",
-   "link_count": 4,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Case Fraud",
-   "link_count": 0,
-   "link_to": "Case Fraud",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Fraud Incident",
-   "link_count": 0,
-   "link_to": "Fraud Incident",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Investigation",
-   "link_count": 0,
-   "link_to": "Investigation",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Investigation Action",
-   "link_count": 0,
-   "link_to": "Investigation Action",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -79,9 +30,58 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master Data",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fraud Case",
+   "link_count": 0,
+   "link_to": "Fraud Case",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fraud Incident",
+   "link_count": 0,
+   "link_to": "Fraud Incident",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fraud Investigation",
+   "link_count": 0,
+   "link_to": "Fraud Investigation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Investigation Action",
+   "link_count": 0,
+   "link_to": "Investigation Action",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-07-14 12:11:42.835173",
+ "modified": "2024-07-14 12:34:02.104133",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Anti-Fraud Mangement",
@@ -96,16 +96,8 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Case Fraud",
-   "link_to": "Case Fraud",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Investigation",
-   "link_to": "Investigation",
+   "label": "Fraud Case",
+   "link_to": "Fraud Case",
    "stats_filter": "[]",
    "type": "DocType"
   },
@@ -114,6 +106,14 @@
    "doc_view": "List",
    "label": "Investigation Action",
    "link_to": "Investigation Action",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Fraud Investigation",
+   "link_to": "Fraud Investigation",
    "stats_filter": "[]",
    "type": "DocType"
   },

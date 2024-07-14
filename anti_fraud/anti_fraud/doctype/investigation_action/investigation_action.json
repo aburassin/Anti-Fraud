@@ -27,7 +27,7 @@
    "fieldname": "investigation",
    "fieldtype": "Link",
    "label": "Investigation",
-   "options": "Investigation",
+   "options": "Fraud Investigation",
    "read_only": 1
   },
   {
@@ -100,7 +100,7 @@
    "fieldname": "case_fraud",
    "fieldtype": "Link",
    "label": "Incident Number",
-   "options": "Case Fraud",
+   "options": "Fraud Case",
    "read_only": 1
   },
   {
@@ -115,7 +115,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-14 12:05:53.747995",
+ "modified": "2024-07-14 12:32:34.830831",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Investigation Action",
