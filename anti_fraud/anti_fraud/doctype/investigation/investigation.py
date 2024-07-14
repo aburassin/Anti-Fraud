@@ -20,6 +20,8 @@ class Investigation(Document):
             })
         action.type=action_type
         action.investigation=self.name
+        action.case_fraud=self.case_fraud
+        action.fraud_incident=self.fraud_incident
         action.flags.ignore_permissions = 1
         action.flags.ignore_mandatory = True
         action.insert()
