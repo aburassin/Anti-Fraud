@@ -1,7 +1,7 @@
 // Copyright (c) 2024, bti and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("Case Fraud", {
+frappe.ui.form.on("Fraud Case", {
   refresh: function (frm) {
     frm.events.set_fraud_incident_btn(frm);
     frm.events.set_cs_team_btn(frm);

@@ -126,7 +126,7 @@
  "modified": "2024-07-14 12:05:58.628635",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
- "name": "Case Fraud",
+ "name": "Fraud Case",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

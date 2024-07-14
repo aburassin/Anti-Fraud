@@ -1,14 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:id",
+ "autoname": "format:FI-{####}",
  "creation": "2024-07-01 12:47:34.020485",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "id",
   "case_fraud",
   "fraud_incident",
   "investigator",
@@ -23,12 +22,6 @@
   "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "id",
-   "fieldtype": "Data",
-   "label": "ID",
-   "unique": 1
-  },
   {
    "fieldname": "investigator",
    "fieldtype": "Link",
@@ -79,7 +72,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Investigation",
+   "options": "Fraud Investigation",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -89,7 +82,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Investigation",
+   "options": "Fraud Investigation",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -99,7 +92,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Incident Number",
-   "options": "Case Fraud",
+   "options": "Fraud Case",
    "read_only": 1,
    "reqd": 1
   },
@@ -121,11 +114,11 @@
    "link_fieldname": "investigation"
   }
  ],
- "modified": "2024-07-14 12:05:27.921146",
+ "modified": "2024-07-14 12:56:20.353680",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
- "name": "Investigation",
- "naming_rule": "By fieldname",
+ "name": "Fraud Investigation",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -4,7 +4,7 @@
 import frappe
 from frappe.model.document import Document
 
-class Investigation(Document):
+class FraudInvestigation(Document):
     pass
 
     @frappe.whitelist()

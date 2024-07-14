@@ -7,8 +7,8 @@ frappe.ui.form.on("Fraud Incident", {
   },
   set_investigation_btn: function (frm) {
     if (!frm.is_new() && frm.doc.docstatus == 1) {
-      frm.add_custom_button("Create Investigation", () => {
-        frappe.new_doc("Investigation", {
+      frm.add_custom_button("Create Fraud Investigation", () => {
+        frappe.new_doc("Fraud Investigation", {
           case_fraud: cur_frm.doc.case_fraud,
           fraud_incident: cur_frm.doc.name,
         });

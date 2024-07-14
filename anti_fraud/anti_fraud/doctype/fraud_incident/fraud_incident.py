@@ -10,6 +10,6 @@ class FraudIncident(Document):
 
 	def validate_case_type(self):
 		if self.case_fraud:
-			type=frappe.db.get_value("Case Fraud",self.case_fraud,"the_relevant_department")
+			type=frappe.db.get_value("Fraud Case",self.case_fraud,"the_relevant_department")
 			if type != "Anti – Fraud Unit":
 				frappe.throw("The relevant Department must be Anti – Fraud Unit")
