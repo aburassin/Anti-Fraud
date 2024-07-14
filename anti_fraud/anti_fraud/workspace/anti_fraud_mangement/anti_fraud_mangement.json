@@ -10,7 +10,7 @@
  "icon": "solid-error",
  "idx": 0,
  "is_hidden": 0,
- "label": "Fraud Fighters Hub",
+ "label": "Anti-Fraud Mangement",
  "links": [
   {
    "hidden": 0,
@@ -81,10 +81,10 @@
    "type": "Link"
   }
  ],
- "modified": "2024-07-14 00:36:54.424979",
+ "modified": "2024-07-14 12:11:42.835173",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
- "name": "Fraud Fighters Hub",
+ "name": "Anti-Fraud Mangement",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -126,5 +126,5 @@
    "type": "DocType"
   }
  ],
- "title": "Fraud Fighters Hub"
+ "title": "Anti-Fraud Mangement"
 }

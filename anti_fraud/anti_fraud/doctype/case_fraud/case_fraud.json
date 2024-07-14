@@ -117,9 +117,13 @@
   {
    "link_doctype": "Investigation",
    "link_fieldname": "case_fraud"
+  },
+  {
+   "link_doctype": "Investigation Action",
+   "link_fieldname": "case_fraud"
   }
  ],
- "modified": "2024-07-13 21:43:38.802064",
+ "modified": "2024-07-14 12:05:58.628635",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Case Fraud",
