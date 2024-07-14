@@ -1,0 +1,119 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2024-07-14 16:34:43.988300",
+  "name": "Pending",
+  "style": "Primary",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2024-06-30 23:37:50.465643",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2024-06-30 23:37:50.467451",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:29:21.045708",
+  "name": "Draft",
+  "style": "",
+  "workflow_state_name": "Draft"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:29:37.656393",
+  "name": "Sent to Review",
+  "style": "",
+  "workflow_state_name": "Sent to Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:34:56.292998",
+  "name": "Draft (Returned)",
+  "style": "Warning",
+  "workflow_state_name": "Draft (Returned)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:34:35.921134",
+  "name": "Approved by Fraud Supervisor",
+  "style": "Success",
+  "workflow_state_name": "Approved by Fraud Supervisor"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:34:28.763677",
+  "name": "Approved by Fraud Manager",
+  "style": "Success",
+  "workflow_state_name": "Approved by Fraud Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:31:26.101401",
+  "name": "Approved by Fraud Supervisor (Returned)",
+  "style": "",
+  "workflow_state_name": "Approved by Fraud Supervisor (Returned)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:34:14.372085",
+  "name": "Rejected by Fraud Supervisor",
+  "style": "Danger",
+  "workflow_state_name": "Rejected by Fraud Supervisor"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:34:21.321600",
+  "name": "Rejected by Fraud Manager",
+  "style": "Danger",
+  "workflow_state_name": "Rejected by Fraud Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:41:52.656037",
+  "name": "Draft (Returned By Fraud Supervisor)",
+  "style": "Warning",
+  "workflow_state_name": "Draft (Returned By Fraud Supervisor)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-07-14 16:42:00.175898",
+  "name": "Draft (Returned By Fraud Manager)",
+  "style": "Warning",
+  "workflow_state_name": "Draft (Returned By Fraud Manager)"
+ }
+]
