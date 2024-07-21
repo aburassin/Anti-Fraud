@@ -101,7 +101,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Case Fraud",
+   "options": "Fraud Case",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -115,15 +115,19 @@
    "link_fieldname": "case_fraud"
   },
   {
-   "link_doctype": "Investigation",
+   "link_doctype": "Fraud Investigation",
    "link_fieldname": "case_fraud"
   },
   {
    "link_doctype": "Investigation Action",
    "link_fieldname": "case_fraud"
+  },
+  {
+   "link_doctype": "Investigation Report",
+   "link_fieldname": "case_fraud"
   }
  ],
- "modified": "2024-07-14 12:05:58.628635",
+ "modified": "2024-07-22 01:48:31.716766",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Fraud Case",

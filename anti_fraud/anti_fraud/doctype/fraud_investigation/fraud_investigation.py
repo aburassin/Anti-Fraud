@@ -5,7 +5,48 @@ import frappe
 from frappe.model.document import Document
 
 class FraudInvestigation(Document):
-    pass
+    def before_submit(self):
+        self.check_action_created()
+
+
+    
+    def check_action_created(self):
+        investigation=frappe.db.exists("Investigation Action", {"investigation": self.name,"docstatus":1})
+        if not investigation:
+            frappe.throw("Please create <b style='color:red'>Submittable Action</b>")
+
+    @frappe.whitelist()
+    def create_investigation_report(self):
+        investigation_action=frappe.db.exists("Investigation Action", {"investigation": self.name,"docstatus":1})
+       
+        if not investigation_action:
+            frappe.throw("Please create <b style='color:red'>Submittable Action</b>")
+
+        fraud_incident= frappe.get_doc("Fraud Incident",self.fraud_incident)
+
+        investigation_report=frappe.new_doc("Investigation Report")
+        investigation_report.fraud_investigation=self.name
+        investigation_report.case_fraud=self.case_fraud
+        investigation_report.fraud_incident=self.fraud_incident
+        investigation_report.investigation_action=investigation_action
+
+        for i in fraud_incident.document:
+            investigation_report.append("documents",{
+                "document_type":i.document_type,
+                "document":i.document,
+                "submission_date":i.submission_date,
+                "verification_status":i.verification_status,
+                "verified_by":i.verified_by,
+                "remarks":i.verified_by,
+            })
+
+        investigation_report.flags.ignore_permissions = 1
+        investigation_report.flags.ignore_mandatory = True
+        investigation_report.insert()
+
+        Url = frappe.utils.get_url_to_form(investigation_report.doctype, investigation_report.name)
+        # show message after succues with hyperlink
+        frappe.msgprint('Investigation Report Created Successfully  <a href={0} > {1} </a>'.format(Url, investigation_report.name))
 
     @frappe.whitelist()
     def create_investigation_action(self,action_type):

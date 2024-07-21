@@ -279,15 +279,19 @@
  "is_submittable": 1,
  "links": [
   {
-   "link_doctype": "Investigation",
+   "link_doctype": "Fraud Investigation",
    "link_fieldname": "fraud_incident"
   },
   {
    "link_doctype": "Investigation Action",
    "link_fieldname": "fraud_incident"
+  },
+  {
+   "link_doctype": "Investigation Report",
+   "link_fieldname": "fraud_incident"
   }
  ],
- "modified": "2024-07-14 12:06:27.768653",
+ "modified": "2024-07-22 01:48:11.475984",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Fraud Incident",

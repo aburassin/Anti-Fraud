@@ -112,9 +112,13 @@
   {
    "link_doctype": "Investigation Action",
    "link_fieldname": "investigation"
+  },
+  {
+   "link_doctype": "Investigation Report",
+   "link_fieldname": "fraud_investigation"
   }
  ],
- "modified": "2024-07-14 12:56:20.353680",
+ "modified": "2024-07-22 01:47:49.774184",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Fraud Investigation",

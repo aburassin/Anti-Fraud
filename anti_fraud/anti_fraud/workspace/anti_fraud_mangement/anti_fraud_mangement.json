@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"hIV-2aSJ_g\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Fraud Fighters Hub</span>\",\"col\":12}},{\"id\":\"Nuo4Tf8fCE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Case\",\"col\":3}},{\"id\":\"njcPWcBg9B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Incident\",\"col\":3}},{\"id\":\"wV8hng2tM-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Investigation\",\"col\":3}},{\"id\":\"PfaV2h26VW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Investigation Action\",\"col\":3}},{\"id\":\"12uV29CkNl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"2nPC4EoCYs\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"b-20oOKeiL\",\"type\":\"card\",\"data\":{\"card_name\":\"Setting\",\"col\":4}}]",
+ "content": "[{\"id\":\"hIV-2aSJ_g\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Fraud Fighters Hub</span>\",\"col\":12}},{\"id\":\"Nuo4Tf8fCE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Case\",\"col\":3}},{\"id\":\"njcPWcBg9B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Incident\",\"col\":3}},{\"id\":\"wV8hng2tM-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fraud Investigation\",\"col\":3}},{\"id\":\"PfaV2h26VW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Investigation Action\",\"col\":3}},{\"id\":\"8hS-QiJwny\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Investigation Report\",\"col\":3}},{\"id\":\"12uV29CkNl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"2nPC4EoCYs\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"b-20oOKeiL\",\"type\":\"card\",\"data\":{\"card_name\":\"Setting\",\"col\":4}}]",
  "creation": "2024-07-13 20:43:01.078154",
  "custom_blocks": [],
  "docstatus": 0,
@@ -35,7 +35,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Master Data",
-   "link_count": 4,
+   "link_count": 5,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -79,9 +79,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Investigation Report",
+   "link_count": 0,
+   "link_to": "Investigation Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-07-14 12:34:02.104133",
+ "modified": "2024-07-22 01:49:36.803678",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Anti-Fraud Mangement",
@@ -98,6 +108,14 @@
    "doc_view": "List",
    "label": "Fraud Case",
    "link_to": "Fraud Case",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Investigation Report",
+   "link_to": "Investigation Report",
    "stats_filter": "[]",
    "type": "DocType"
   },
