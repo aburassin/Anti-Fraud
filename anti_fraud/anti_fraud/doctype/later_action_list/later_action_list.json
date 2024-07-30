@@ -8,6 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "question",
+  "condition",
   "weight"
  ],
  "fields": [
@@ -25,12 +26,22 @@
    "in_list_view": 1,
    "label": "Weight",
    "reqd": 1
+  },
+  {
+   "default": "Yes",
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Condition",
+   "options": "Yes\nNo"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-13 23:02:17.087020",
+ "modified": "2024-07-30 13:08:13.621241",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Later Action List",

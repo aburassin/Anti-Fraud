@@ -16,18 +16,20 @@ class InvestigationAction(Document):
         if len(self.action):
             weight=0
             for i in self.action:
-                if i.answer =="Yes":
-                    weight+=self.get_setting_weight(setting,self.type,i.question,info)
+                weight+=self.get_setting_weight(setting,self.type,i.question,info,i.answer)
 
             self.scoring=str(weight)
             self.potential_fraud=self.get_class(setting,self.scoring,self.type)
-    def get_setting_weight(self,setting,type,question,info):
+            
+    def get_setting_weight(self,setting,type,question,info,answer):
        
         for i in setting[info[type]]:
             
-            if question == i["question"]:
+            if question == i["question"] and answer==i["condition"]:
+                  
                     return int(i["weight"])
-    
+            
+        return 0
     def get_class(self, setting, point,type):
         info={"Instant Action":"instant_action_score","Later Action":"later_action_score"}
         sorted_classes = sorted(
