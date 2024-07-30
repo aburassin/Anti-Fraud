@@ -20,6 +20,7 @@ class InvestigationAction(Document):
 
             self.scoring=str(weight)
             self.potential_fraud=self.get_class(setting,self.scoring,self.type)
+            
     def get_setting_weight(self,setting,type,question,info,answer):
        
         for i in setting[info[type]]:
