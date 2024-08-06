@@ -3,7 +3,22 @@
 
 frappe.ui.form.on("Fraud Incident", {
   refresh: function (frm) {
-    frm.events.set_investigation_btn(frm);
+    if (!frm.is_new() && frm.doc.docstatus == 1) {
+      frappe.db
+
+        .get_value(
+          "Investigation Action",
+          { fraud_incident: frm.doc.name },
+          "name"
+        )
+        .then((r) => {
+          if (!r.message.name) {
+            frm.events.set_action_btn(frm);
+          } else {
+            frm.events.set_investigation_btn(frm);
+          }
+        });
+    }
   },
   set_investigation_btn: function (frm) {
     if (!frm.is_new() && frm.doc.docstatus == 1) {
@@ -14,5 +29,21 @@ frappe.ui.form.on("Fraud Incident", {
         });
       });
     }
+  },
+  set_action_btn: function (frm) {
+    frm.add_custom_button(
+      "Instanse",
+      () => {
+        frappe.call({
+          doc: frm.doc,
+          args: { action_type: "Instant Action" },
+          method: "create_investigation_action",
+          callback: (r) => {
+            cur_frm.reload_doc();
+          },
+        });
+      },
+      "Take Action"
+    );
   },
 });

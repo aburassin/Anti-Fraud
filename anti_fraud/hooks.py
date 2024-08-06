@@ -4,7 +4,7 @@ app_publisher = "bti"
 app_description = "fraud"
 app_email = "info@saudi-bti.com"
 app_license = "MIT"
-fixtures = [ {"dt": "Action Question"},{"dt": "Investigation Action Setting"},{"dt":"Fraud Document Type"},{"dt":"Workflow State"},{"dt":"Workflow Action Master"},{"dt":"Workflow"},{"dt":"Role"}]
+fixtures = [ {"dt": "Action Question"},{"dt": "Investigation Action Setting"},{"dt":"Fraud Document Type"},{"dt":"Workflow State"},{"dt":"Workflow Action Master"},{"dt":"Workflow"},{"dt":"Role"},{"dt":"Role Profile"},{"dt":"Module Profile"}]
 
 # Includes in <head>
 # ------------------
