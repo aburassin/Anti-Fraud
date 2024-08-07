@@ -4,10 +4,10 @@
   "doctype": "Workflow",
   "document_type": "Fraud Case",
   "is_active": 1,
-  "modified": "2024-08-06 10:02:30.794212",
+  "modified": "2024-08-07 09:08:25.120944",
   "name": "Fraud Case",
   "override_status": 0,
-  "send_email_alert": 0,
+  "send_email_alert": 1,
   "states": [
    {
     "allow_edit": "Officer Role",
@@ -83,7 +83,7 @@
   "transitions": [
    {
     "action": "Sent To Review",
-    "allow_self_approval": 0,
+    "allow_self_approval": 1,
     "allowed": "Officer Role",
     "condition": null,
     "next_state": "Pending",
@@ -94,7 +94,7 @@
    },
    {
     "action": "Sent To Review",
-    "allow_self_approval": 0,
+    "allow_self_approval": 1,
     "allowed": "Officer Role",
     "condition": null,
     "next_state": "Pending",
@@ -372,13 +372,13 @@
   "doctype": "Workflow",
   "document_type": "Fraud Incident",
   "is_active": 1,
-  "modified": "2024-07-14 16:43:40.156793",
+  "modified": "2024-08-07 09:08:39.225352",
   "name": "Fraud Incident",
   "override_status": 0,
-  "send_email_alert": 0,
+  "send_email_alert": 1,
   "states": [
    {
-    "allow_edit": "All",
+    "allow_edit": "Officer Role",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -392,7 +392,7 @@
     "update_value": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Officer Role",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -401,26 +401,12 @@
     "parent": "Fraud Incident",
     "parentfield": "states",
     "parenttype": "Workflow",
-    "state": "Draft (Returned By Fraud Supervisor)",
+    "state": "Draft (Returned By Officer Role)",
     "update_field": null,
     "update_value": null
    },
    {
-    "allow_edit": "All",
-    "avoid_status_override": 0,
-    "doc_status": "0",
-    "is_optional_state": 0,
-    "message": null,
-    "next_action_email_template": null,
-    "parent": "Fraud Incident",
-    "parentfield": "states",
-    "parenttype": "Workflow",
-    "state": "Draft (Returned By Fraud Manager)",
-    "update_field": null,
-    "update_value": null
-   },
-   {
-    "allow_edit": "Fraud Supervisor",
+    "allow_edit": "Officer Role",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -434,35 +420,7 @@
     "update_value": null
    },
    {
-    "allow_edit": "Fraud Supervisor",
-    "avoid_status_override": 0,
-    "doc_status": "0",
-    "is_optional_state": 0,
-    "message": null,
-    "next_action_email_template": null,
-    "parent": "Fraud Incident",
-    "parentfield": "states",
-    "parenttype": "Workflow",
-    "state": "Approved by Fraud Supervisor",
-    "update_field": null,
-    "update_value": null
-   },
-   {
-    "allow_edit": "Fraud Supervisor",
-    "avoid_status_override": 0,
-    "doc_status": "0",
-    "is_optional_state": 0,
-    "message": null,
-    "next_action_email_template": null,
-    "parent": "Fraud Incident",
-    "parentfield": "states",
-    "parenttype": "Workflow",
-    "state": "Rejected by Fraud Supervisor",
-    "update_field": null,
-    "update_value": null
-   },
-   {
-    "allow_edit": "Fraud Manager",
+    "allow_edit": "Officer Role",
     "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
@@ -471,12 +429,12 @@
     "parent": "Fraud Incident",
     "parentfield": "states",
     "parenttype": "Workflow",
-    "state": "Approved by Fraud Manager",
+    "state": "Approved by Officer Role",
     "update_field": null,
     "update_value": null
    },
    {
-    "allow_edit": "Fraud Manager",
+    "allow_edit": "Officer Role",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -485,7 +443,7 @@
     "parent": "Fraud Incident",
     "parentfield": "states",
     "parenttype": "Workflow",
-    "state": "Rejected by Fraud Manager",
+    "state": "Rejected by Officer Role",
     "update_field": null,
     "update_value": null
    }
@@ -494,7 +452,7 @@
    {
     "action": "Sent To Review",
     "allow_self_approval": 1,
-    "allowed": "All",
+    "allowed": "Officer Role",
     "condition": null,
     "next_state": "Pending",
     "parent": "Fraud Incident",
@@ -505,31 +463,20 @@
    {
     "action": "Sent To Review",
     "allow_self_approval": 1,
-    "allowed": "All",
+    "allowed": "Officer Role",
     "condition": null,
     "next_state": "Pending",
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Draft (Returned By Fraud Supervisor)"
-   },
-   {
-    "action": "Sent To Review",
-    "allow_self_approval": 1,
-    "allowed": "All",
-    "condition": null,
-    "next_state": "Pending",
-    "parent": "Fraud Incident",
-    "parentfield": "transitions",
-    "parenttype": "Workflow",
-    "state": "Draft (Returned By Fraud Manager)"
+    "state": "Draft (Returned By Officer Role)"
    },
    {
     "action": "Approve",
-    "allow_self_approval": 1,
-    "allowed": "Fraud Supervisor",
+    "allow_self_approval": 0,
+    "allowed": "Officer Role",
     "condition": null,
-    "next_state": "Approved by Fraud Supervisor",
+    "next_state": "Approved by Officer Role",
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
@@ -537,10 +484,10 @@
    },
    {
     "action": "Reject",
-    "allow_self_approval": 1,
-    "allowed": "Fraud Supervisor",
+    "allow_self_approval": 0,
+    "allowed": "Officer Role",
     "condition": null,
-    "next_state": "Rejected by Fraud Supervisor",
+    "next_state": "Rejected by Officer Role",
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
@@ -548,47 +495,14 @@
    },
    {
     "action": "Return",
-    "allow_self_approval": 1,
-    "allowed": "Fraud Supervisor",
+    "allow_self_approval": 0,
+    "allowed": "Officer Role",
     "condition": null,
-    "next_state": "Draft (Returned By Fraud Supervisor)",
+    "next_state": "Draft (Returned By Officer Role)",
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
     "state": "Pending"
-   },
-   {
-    "action": "Approve",
-    "allow_self_approval": 1,
-    "allowed": "Fraud Manager",
-    "condition": null,
-    "next_state": "Approved by Fraud Manager",
-    "parent": "Fraud Incident",
-    "parentfield": "transitions",
-    "parenttype": "Workflow",
-    "state": "Approved by Fraud Supervisor"
-   },
-   {
-    "action": "Reject",
-    "allow_self_approval": 1,
-    "allowed": "Fraud Manager",
-    "condition": null,
-    "next_state": "Rejected by Fraud Manager",
-    "parent": "Fraud Incident",
-    "parentfield": "transitions",
-    "parenttype": "Workflow",
-    "state": "Approved by Fraud Supervisor"
-   },
-   {
-    "action": "Return",
-    "allow_self_approval": 1,
-    "allowed": "Fraud Manager",
-    "condition": null,
-    "next_state": "Draft (Returned By Fraud Manager)",
-    "parent": "Fraud Incident",
-    "parentfield": "transitions",
-    "parenttype": "Workflow",
-    "state": "Approved by Fraud Supervisor"
    }
   ],
   "workflow_name": "Fraud Incident",
