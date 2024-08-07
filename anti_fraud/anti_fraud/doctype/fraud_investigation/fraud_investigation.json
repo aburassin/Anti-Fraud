@@ -17,6 +17,12 @@
   "column_break_sayag",
   "findings",
   "actions_taken",
+  "add_list",
+  "customer_info_section",
+  "customer_id",
+  "national_id",
+  "column_break_l3vzy",
+  "phone_number",
   "recommendations_section",
   "recommendations",
   "amended_from"
@@ -104,6 +110,42 @@
    "options": "Fraud Incident",
    "read_only": 1,
    "reqd": 1
+  },
+  {
+   "fetch_from": "fraud_incident.add_list",
+   "fieldname": "add_list",
+   "fieldtype": "Select",
+   "label": "Add List",
+   "options": "\u0627\u0644\u062d\u0638\u0631\n\u0627\u0644\u0645\u0631\u0627\u0642\u0628\u0629\n\u0644\u0627 \u064a\u0648\u062c\u062f"
+  },
+  {
+   "fieldname": "customer_info_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Info",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "label": "Customer ID",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "fraud_incident.id_number",
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "National ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_l3vzy",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -118,7 +160,7 @@
    "link_fieldname": "fraud_investigation"
   }
  ],
- "modified": "2024-07-22 01:47:49.774184",
+ "modified": "2024-08-06 11:58:46.095503",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Fraud Investigation",
@@ -136,6 +178,54 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Officer Role",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fraud Supervisor",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fraud Manager",
    "select": 1,
    "share": 1,
    "submit": 1,

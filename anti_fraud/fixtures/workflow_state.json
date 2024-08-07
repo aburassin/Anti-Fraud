@@ -115,5 +115,32 @@
   "name": "Draft (Returned By Fraud Manager)",
   "style": "Warning",
   "workflow_state_name": "Draft (Returned By Fraud Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-08-06 10:05:46.016449",
+  "name": "Approved by Officer Role",
+  "style": "Success",
+  "workflow_state_name": "Approved by Officer Role"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-08-06 10:05:54.028383",
+  "name": "Rejected by Officer Role",
+  "style": "Danger",
+  "workflow_state_name": "Rejected by Officer Role"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-08-06 10:05:34.108936",
+  "name": "Draft (Returned By Officer Role)",
+  "style": "Warning",
+  "workflow_state_name": "Draft (Returned By Officer Role)"
  }
 ]

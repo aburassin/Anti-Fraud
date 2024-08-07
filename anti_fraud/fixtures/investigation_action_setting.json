@@ -4,6 +4,7 @@
   "doctype": "Investigation Action Setting",
   "instant_action": [
    {
+    "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
@@ -11,6 +12,7 @@
     "weight": 20.0
    },
    {
+    "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
@@ -18,6 +20,7 @@
     "weight": 10.0
    },
    {
+    "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
@@ -25,6 +28,7 @@
     "weight": 15.0
    },
    {
+    "condition": "No",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
@@ -32,6 +36,7 @@
     "weight": 10.0
    },
    {
+    "condition": "No",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
@@ -39,6 +44,7 @@
     "weight": 10.0
    },
    {
+    "condition": "No",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
@@ -46,6 +52,7 @@
     "weight": 15.0
    },
    {
+    "condition": "No",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
@@ -85,6 +92,7 @@
   ],
   "later_action": [
    {
+    "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
@@ -92,6 +100,7 @@
     "weight": 20.0
    },
    {
+    "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
@@ -99,6 +108,7 @@
     "weight": 20.0
    },
    {
+    "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
@@ -106,6 +116,7 @@
     "weight": 10.0
    },
    {
+    "condition": "No",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
@@ -113,6 +124,7 @@
     "weight": 5.0
    },
    {
+    "condition": "No",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
@@ -120,6 +132,7 @@
     "weight": 30.0
    },
    {
+    "condition": "No",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
@@ -127,6 +140,7 @@
     "weight": 10.0
    },
    {
+    "condition": "No",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
@@ -164,7 +178,7 @@
     "weight": 100.0
    }
   ],
-  "modified": "2024-07-14 00:31:18.014330",
+  "modified": "2024-07-30 13:09:16.744353",
   "name": "Investigation Action Setting"
  }
 ]

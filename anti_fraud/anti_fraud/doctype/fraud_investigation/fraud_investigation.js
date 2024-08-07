@@ -33,7 +33,7 @@ frappe.ui.form.on("Fraud Investigation", {
           doc: frm.doc,
           method: "create_investigation_report",
           callback: (r) => {
-            cur_frm.reload();
+            cur_frm.reload_doc();
           },
         });
       });
@@ -41,21 +41,6 @@ frappe.ui.form.on("Fraud Investigation", {
   },
   set_action_btn: function (frm) {
     if (!frm.is_new() || frm.doc.docstatus == 0) {
-      frm.add_custom_button(
-        "Instanse",
-        () => {
-          frappe.call({
-            doc: frm.doc,
-            args: { action_type: "Instant Action" },
-            method: "create_investigation_action",
-            callback: (r) => {
-              cur_frm.reload();
-            },
-          });
-        },
-        "Take Action"
-      );
-
       frm.add_custom_button(
         "Later",
         () => {

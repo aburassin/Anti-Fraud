@@ -19,6 +19,13 @@ frappe.ui.form.on("Fraud Case", {
       });
     }
   },
+  is_a_fraud_case_opened: function (frm) {
+    if (frm.doc.is_a_fraud_case_opened == "Yes") {
+      frm.set_value("the_relevant_department", "Anti – Fraud Unit");
+    } else {
+      frm.set_value("the_relevant_department", "CS team");
+    }
+  },
   set_cs_team_btn: function (frm) {
     if (
       !frm.is_new() &&
