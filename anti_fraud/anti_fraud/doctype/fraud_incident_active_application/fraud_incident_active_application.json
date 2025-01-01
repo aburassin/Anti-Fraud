@@ -20,13 +20,14 @@
   },
   {
    "fieldname": "product",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Product"
+   "label": "Product",
+   "options": "Baseeta\nCredit Card\nCash"
   },
   {
    "fieldname": "amount",
-   "fieldtype": "Data",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Amount"
   },
@@ -40,7 +41,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-01 18:45:11.692807",
+ "modified": "2025-01-01 20:47:31.561592",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Fraud Incident Active Application",
