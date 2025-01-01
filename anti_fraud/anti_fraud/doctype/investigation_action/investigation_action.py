@@ -20,9 +20,10 @@ class InvestigationAction(Document):
             weight=0
             for i in self.action:
                 weight+=self.get_setting_weight(setting,self.type,i.question,info,i.answer)
-
+            
             self.scoring=str(weight)
             self.potential_fraud=self.get_class(setting,self.scoring,self.type)
+            
             
     def get_setting_weight(self,setting,type,question,info,answer):
        
@@ -33,6 +34,7 @@ class InvestigationAction(Document):
                     return int(i["weight"])
             
         return 0
+    
     def get_class(self, setting, point,type):
         if self.financial_fraud_method=="العميل يقدم مستندات مزورة":
             info={"Instant Action":"forgery_instant_action_score","Later Action":"forgery_later_action_score"}
