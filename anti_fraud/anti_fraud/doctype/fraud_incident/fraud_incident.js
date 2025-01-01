@@ -21,14 +21,29 @@ frappe.ui.form.on("Fraud Incident", {
     }
   },
   set_investigation_btn: function (frm) {
-    if (!frm.is_new() && frm.doc.docstatus == 1) {
-      frm.add_custom_button("Create Fraud Investigation", () => {
-        frappe.new_doc("Fraud Investigation", {
-          case_fraud: cur_frm.doc.case_fraud,
-          fraud_incident: cur_frm.doc.name,
-        });
+    frappe.db
+
+      .get_value(
+        "Fraud Investigation",
+        { fraud_incident: frm.doc.name },
+        "name"
+      )
+      .then((r) => {
+        if (!r.message.name) {
+          if (!frm.is_new() && frm.doc.docstatus == 1) {
+            frm.add_custom_button("Create Fraud Investigation", () => {
+              frappe.call({
+                doc: frm.doc,
+
+                method: "create_investigation",
+                callback: (r) => {
+                  cur_frm.reload_doc();
+                },
+              });
+            });
+          }
+        }
       });
-    }
   },
   set_action_btn: function (frm) {
     frm.add_custom_button(

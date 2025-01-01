@@ -50,7 +50,10 @@ class FraudInvestigation(Document):
 
     @frappe.whitelist()
     def create_investigation_action(self,action_type):
-        info={"Instant Action":"instant_action","Later Action":"later_action"}
+        if self.financial_fraud_method=="العميل يقدم مستندات مزورة":
+            info={"Instant Action":"forgery_instant_action","Later Action":"forgery_later_action"}
+        else:
+            info={"Instant Action":"instant_action","Later Action":"later_action"}
         setting=frappe.get_doc("Investigation Action Setting").as_dict()
 
         self.validate_action_question(setting,action_type,info)
@@ -62,6 +65,7 @@ class FraudInvestigation(Document):
         action.type=action_type
         action.investigation=self.name
         action.case_fraud=self.case_fraud
+        action.financial_fraud_method=self.financial_fraud_method
         action.fraud_incident=self.fraud_incident
         action.flags.ignore_permissions = 1
         action.flags.ignore_mandatory = True

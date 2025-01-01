@@ -15,6 +15,10 @@
   "informer_type",
   "ucfs_staff",
   "customer",
+  "ucfs_id",
+  "ucfs_name",
+  "customer_name",
+  "customer_phone_number",
   "case_details_section",
   "case_details",
   "action_section",
@@ -113,6 +117,30 @@
    "fieldtype": "Select",
    "label": "Fraud Type",
    "options": "\n\u0627\u062d\u062a\u064a\u0627\u0644 \u0628\u0627\u0644\u062a\u0624\u0627\u0637\u0648\n\u0627\u062d\u062a\u064a\u0627\u0644 \u062f\u0627\u062e\u0644\u064a\n\u0627\u062d\u062a\u064a\u0627\u0644 \u062e\u0627\u0631\u062c\u064a\n\u0627\u062e\u0631\u064a"
+  },
+  {
+   "depends_on": "eval:doc.informer_type==\"UCFS Staff\"",
+   "fieldname": "ucfs_id",
+   "fieldtype": "Data",
+   "label": "UCFS ID"
+  },
+  {
+   "depends_on": "eval:doc.informer_type==\"UCFS Staff\"",
+   "fieldname": "ucfs_name",
+   "fieldtype": "Data",
+   "label": "UCFS Name"
+  },
+  {
+   "depends_on": "eval:doc.informer_type==\"Customer\"",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "depends_on": "eval:doc.informer_type==\"Customer\"",
+   "fieldname": "customer_phone_number",
+   "fieldtype": "Data",
+   "label": "Customer Phone Number"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -135,7 +163,7 @@
    "link_fieldname": "case_fraud"
   }
  ],
- "modified": "2024-08-07 09:10:47.467307",
+ "modified": "2025-01-01 18:35:40.989335",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Fraud Case",

@@ -10,7 +10,10 @@ class InvestigationAction(Document):
         self.get_score()
 
     def get_score(self):
-        info={"Instant Action":"instant_action","Later Action":"later_action"}
+        if self.financial_fraud_method=="العميل يقدم مستندات مزورة":
+            info={"Instant Action":"forgery_instant_action","Later Action":"forgery_later_action"}
+        else:
+            info={"Instant Action":"instant_action","Later Action":"later_action"}
         setting=frappe.get_doc("Investigation Action Setting").as_dict()
         
         if len(self.action):
@@ -31,7 +34,10 @@ class InvestigationAction(Document):
             
         return 0
     def get_class(self, setting, point,type):
-        info={"Instant Action":"instant_action_score","Later Action":"later_action_score"}
+        if self.financial_fraud_method=="العميل يقدم مستندات مزورة":
+            info={"Instant Action":"forgery_instant_action_score","Later Action":"forgery_later_action_score"}
+        else:
+            info={"Instant Action":"instant_action_score","Later Action":"later_action_score"}
         sorted_classes = sorted(
             setting[info[type]], key=lambda x: x["weight"], reverse=False
         )

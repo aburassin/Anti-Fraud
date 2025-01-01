@@ -21,7 +21,8 @@
     "parenttype": "Workflow",
     "state": "Draft",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Officer Role",
@@ -35,7 +36,8 @@
     "parenttype": "Workflow",
     "state": "Draft (Returned By Officer Role)",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Officer Role",
@@ -49,7 +51,8 @@
     "parenttype": "Workflow",
     "state": "Pending",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Officer Role",
@@ -63,7 +66,8 @@
     "parenttype": "Workflow",
     "state": "Approved by Officer Role",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Officer Role",
@@ -77,7 +81,8 @@
     "parenttype": "Workflow",
     "state": "Rejected by Officer Role",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    }
   ],
   "transitions": [
@@ -90,7 +95,8 @@
     "parent": "Fraud Case",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Draft"
+    "state": "Draft",
+    "workflow_builder_id": null
    },
    {
     "action": "Sent To Review",
@@ -101,7 +107,8 @@
     "parent": "Fraud Case",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Draft (Returned By Officer Role)"
+    "state": "Draft (Returned By Officer Role)",
+    "workflow_builder_id": null
    },
    {
     "action": "Approve",
@@ -112,7 +119,8 @@
     "parent": "Fraud Case",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    },
    {
     "action": "Reject",
@@ -123,7 +131,8 @@
     "parent": "Fraud Case",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    },
    {
     "action": "Return",
@@ -134,9 +143,11 @@
     "parent": "Fraud Case",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    }
   ],
+  "workflow_data": null,
   "workflow_name": "Fraud Case",
   "workflow_state_field": "workflow_state"
  },
@@ -162,7 +173,8 @@
     "parenttype": "Workflow",
     "state": "Draft",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "All",
@@ -176,7 +188,8 @@
     "parenttype": "Workflow",
     "state": "Draft (Returned By Fraud Supervisor)",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "All",
@@ -190,7 +203,8 @@
     "parenttype": "Workflow",
     "state": "Draft (Returned By Fraud Manager)",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Fraud Supervisor",
@@ -204,7 +218,8 @@
     "parenttype": "Workflow",
     "state": "Pending",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Fraud Supervisor",
@@ -218,7 +233,8 @@
     "parenttype": "Workflow",
     "state": "Approved by Fraud Supervisor",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Fraud Supervisor",
@@ -232,7 +248,8 @@
     "parenttype": "Workflow",
     "state": "Rejected by Fraud Supervisor",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Fraud Manager",
@@ -246,7 +263,8 @@
     "parenttype": "Workflow",
     "state": "Approved by Fraud Manager",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Fraud Manager",
@@ -260,7 +278,8 @@
     "parenttype": "Workflow",
     "state": "Rejected by Fraud Manager",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    }
   ],
   "transitions": [
@@ -273,7 +292,8 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Draft"
+    "state": "Draft",
+    "workflow_builder_id": null
    },
    {
     "action": "Sent To Review",
@@ -284,7 +304,8 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Draft (Returned By Fraud Supervisor)"
+    "state": "Draft (Returned By Fraud Supervisor)",
+    "workflow_builder_id": null
    },
    {
     "action": "Sent To Review",
@@ -295,7 +316,8 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Draft (Returned By Fraud Manager)"
+    "state": "Draft (Returned By Fraud Manager)",
+    "workflow_builder_id": null
    },
    {
     "action": "Approve",
@@ -306,7 +328,8 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    },
    {
     "action": "Reject",
@@ -317,7 +340,8 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    },
    {
     "action": "Return",
@@ -328,7 +352,8 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    },
    {
     "action": "Approve",
@@ -339,7 +364,8 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Approved by Fraud Supervisor"
+    "state": "Approved by Fraud Supervisor",
+    "workflow_builder_id": null
    },
    {
     "action": "Reject",
@@ -350,7 +376,8 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Approved by Fraud Supervisor"
+    "state": "Approved by Fraud Supervisor",
+    "workflow_builder_id": null
    },
    {
     "action": "Return",
@@ -361,9 +388,11 @@
     "parent": "Fraud Investigation",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Approved by Fraud Supervisor"
+    "state": "Approved by Fraud Supervisor",
+    "workflow_builder_id": null
    }
   ],
+  "workflow_data": null,
   "workflow_name": "Fraud Investigation",
   "workflow_state_field": "workflow_state"
  },
@@ -389,7 +418,8 @@
     "parenttype": "Workflow",
     "state": "Draft",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Officer Role",
@@ -403,7 +433,8 @@
     "parenttype": "Workflow",
     "state": "Draft (Returned By Officer Role)",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Officer Role",
@@ -417,7 +448,8 @@
     "parenttype": "Workflow",
     "state": "Pending",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Officer Role",
@@ -431,7 +463,8 @@
     "parenttype": "Workflow",
     "state": "Approved by Officer Role",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    },
    {
     "allow_edit": "Officer Role",
@@ -445,7 +478,8 @@
     "parenttype": "Workflow",
     "state": "Rejected by Officer Role",
     "update_field": null,
-    "update_value": null
+    "update_value": null,
+    "workflow_builder_id": null
    }
   ],
   "transitions": [
@@ -458,7 +492,8 @@
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Draft"
+    "state": "Draft",
+    "workflow_builder_id": null
    },
    {
     "action": "Sent To Review",
@@ -469,7 +504,8 @@
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Draft (Returned By Officer Role)"
+    "state": "Draft (Returned By Officer Role)",
+    "workflow_builder_id": null
    },
    {
     "action": "Approve",
@@ -480,7 +516,8 @@
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    },
    {
     "action": "Reject",
@@ -491,7 +528,8 @@
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    },
    {
     "action": "Return",
@@ -502,9 +540,11 @@
     "parent": "Fraud Incident",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Pending"
+    "state": "Pending",
+    "workflow_builder_id": null
    }
   ],
+  "workflow_data": null,
   "workflow_name": "Fraud Incident",
   "workflow_state_field": "workflow_state"
  }

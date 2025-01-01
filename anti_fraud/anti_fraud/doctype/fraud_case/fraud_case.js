@@ -15,7 +15,6 @@ frappe.ui.form.on("Fraud Case", {
       frm.add_custom_button("Create Fraud Incident", () => {
         frappe.new_doc("Fraud Incident", {
           case_fraud: cur_frm.doc.name,
-          incident_type: cur_frm.doc.fraud_type,
         });
       });
     }

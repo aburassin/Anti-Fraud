@@ -16,7 +16,18 @@
   "later_action",
   "later_action_score_section",
   "later_action_score",
-  "column_break_vmmyd"
+  "column_break_vmmyd",
+  "forgery_of_documents_tab",
+  "forgery_instant_action_s",
+  "forgery_instant_action",
+  "forgery_instant_action_score_s",
+  "forgery_instant_action_score",
+  "column_break_dohy",
+  "later_action_s",
+  "forgery_later_action",
+  "later_action_score_s",
+  "forgery_later_action_score",
+  "column_break_aczh"
  ],
  "fields": [
   {
@@ -71,12 +82,66 @@
    "label": "Later Action Score",
    "options": "Instant Action Score",
    "reqd": 1
+  },
+  {
+   "fieldname": "forgery_of_documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Forgery of Documents"
+  },
+  {
+   "fieldname": "forgery_instant_action_s",
+   "fieldtype": "Section Break",
+   "label": "Instant Action"
+  },
+  {
+   "fieldname": "forgery_instant_action",
+   "fieldtype": "Table",
+   "options": "Instant Action List"
+  },
+  {
+   "fieldname": "forgery_instant_action_score_s",
+   "fieldtype": "Section Break",
+   "label": "Instant Action Score"
+  },
+  {
+   "fieldname": "forgery_instant_action_score",
+   "fieldtype": "Table",
+   "options": "Instant Action Score"
+  },
+  {
+   "fieldname": "column_break_dohy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "later_action_s",
+   "fieldtype": "Section Break",
+   "label": "Later Action"
+  },
+  {
+   "fieldname": "forgery_later_action",
+   "fieldtype": "Table",
+   "options": "Later Action List"
+  },
+  {
+   "fieldname": "later_action_score_s",
+   "fieldtype": "Section Break",
+   "label": "Later Action Score"
+  },
+  {
+   "fieldname": "forgery_later_action_score",
+   "fieldtype": "Table",
+   "label": "Later Action Score",
+   "options": "Instant Action Score"
+  },
+  {
+   "fieldname": "column_break_aczh",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-08-06 10:33:52.918338",
+ "modified": "2025-01-01 19:14:41.608925",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Investigation Action Setting",

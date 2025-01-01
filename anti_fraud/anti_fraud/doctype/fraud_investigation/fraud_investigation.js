@@ -49,7 +49,7 @@ frappe.ui.form.on("Fraud Investigation", {
             args: { action_type: "Later Action" },
             method: "create_investigation_action",
             callback: (r) => {
-              cur_frm.reload();
+              cur_frm.reload_doc();
             },
           });
         },

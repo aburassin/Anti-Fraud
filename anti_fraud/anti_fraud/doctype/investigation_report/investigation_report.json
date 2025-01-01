@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:INV-REP-{#####}",
  "creation": "2024-07-22 00:31:01.509106",
  "default_view": "List",
  "doctype": "DocType",
@@ -74,7 +75,6 @@
    "label": "Headquarters"
   },
   {
-   "fetch_from": "fraud_incident.branch_name",
    "fieldname": "branch",
    "fieldtype": "Data",
    "label": "Name of Branch - if any -"
@@ -116,25 +116,21 @@
    "label": "Information on Fraud Incident"
   },
   {
-   "fetch_from": "fraud_incident.incident_date",
    "fieldname": "date_of_incident",
    "fieldtype": "Date",
    "label": "Date of Incident"
   },
   {
-   "fetch_from": "fraud_incident.incident_details",
    "fieldname": "incident_description",
    "fieldtype": "Text",
    "label": "Incident Description"
   },
   {
-   "fetch_from": "fraud_incident.actions_taken",
    "fieldname": "actions_taken",
    "fieldtype": "Text",
    "label": "Actions Taken"
   },
   {
-   "fetch_from": "fraud_incident.subsequent_actions",
    "fieldname": "subsequent_actions",
    "fieldtype": "Text",
    "label": "Subsequent Actions"
@@ -149,19 +145,16 @@
    "label": "Information on Alleged Fraudster"
   },
   {
-   "fetch_from": "fraud_incident.names_of_the_suspects",
    "fieldname": "sus_name",
    "fieldtype": "Data",
    "label": "Name(s)"
   },
   {
-   "fetch_from": "fraud_incident.id_number",
    "fieldname": "iqama",
    "fieldtype": "Data",
    "label": "ID/ Iqama No."
   },
   {
-   "fetch_from": "fraud_incident.nationalty",
    "fieldname": "nationality",
    "fieldtype": "Data",
    "label": "Nationality"
@@ -245,7 +238,6 @@
    "reqd": 1
   },
   {
-   "fetch_from": "fraud_incident.amount",
    "fieldname": "total_amount",
    "fieldtype": "Data",
    "label": "Total Amount -if any - in numbers"
@@ -254,10 +246,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-06 10:22:37.281757",
+ "modified": "2025-01-01 19:45:07.426940",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Investigation Report",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

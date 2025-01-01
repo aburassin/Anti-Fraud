@@ -2,21 +2,119 @@
  {
   "docstatus": 0,
   "doctype": "Investigation Action Setting",
+  "forgery_instant_action": [
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "طلب اضافة العميل الى قائمة الاحتيال ( الحظر او المراقبة)",
+    "weight": 70.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "ايقاف الموظف بسبب وجود الاشتباه بعملية الاحتيال الداخلي",
+    "weight": 30.0
+   }
+  ],
+  "forgery_instant_action_score": [
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "No Fraud activities",
+    "weight": 40.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "Low",
+    "weight": 70.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "High",
+    "weight": 100.0
+   }
+  ],
+  "forgery_later_action": [
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "اضافة العميل الى قائمة الاحتيال ( الحظر او المراقبة)",
+    "weight": 75.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "تم التأكد من وجود موظف او اكثر شارك في عملية الاحتيال",
+    "weight": 20.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "وجود دليل كافي لوجود خطا في النظام تسبب في عملية الاحتيال",
+    "weight": 5.0
+   }
+  ],
+  "forgery_later_action_score": [
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "No Fraud activities",
+    "weight": 40.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "Low",
+    "weight": 70.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "High",
+    "weight": 100.0
+   }
+  ],
   "instant_action": [
    {
     "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u0645 \u0627\u064a\u0642\u0627\u0641 \u0637\u0644\u0628 \u0627\u0644\u062a\u0645\u0648\u064a\u0644 \u0627\u0648 \u0627\u0644\u0628\u0637\u0627\u0642\u0629 \u0627\u0644\u0627\u0626\u062a\u0645\u0627\u0646\u064a\u0629\u061f",
-    "weight": 20.0
+    "question": "قيام العميل بمشاركة المعلومات الشخصية ورمز التحقق مع الاخرين",
+    "weight": 50.0
    },
    {
     "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u062d\u0642\u0642 \u0627\u0644\u0646\u0638\u0627\u0645 \u0645\u0646 \u0627\u0644\u062a\u0627\u0645\u064a\u0646\u0627\u062a \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629 / \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u0645\u0627\u0644\u064a\u0629\u061f",
+    "question": "وجود دليل كافي لوجود خطا في النظام تسبب في عملية الاحتيال",
+    "weight": 15.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "اضافة الجهاز المستخدم في عملية الاحتيال الى قائمة المراقبة",
     "weight": 10.0
    },
    {
@@ -24,40 +122,8 @@
     "parent": "Investigation Action Setting",
     "parentfield": "instant_action",
     "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u062d\u0642\u0642 \u0627\u0644\u0646\u0638\u0627\u0645 \u0645\u0646 \u064a\u0642\u064a\u0646\u061f",
-    "weight": 15.0
-   },
-   {
-    "condition": "No",
-    "parent": "Investigation Action Setting",
-    "parentfield": "instant_action",
-    "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u062d\u0642\u0642 \u0627\u0644\u0646\u0638\u0627\u0645 \u0645\u0646 \u0631\u0642\u0645 \u0647\u0627\u062a\u0641 \u0627\u0644\u0639\u0645\u064a\u0644\u061f",
-    "weight": 10.0
-   },
-   {
-    "condition": "No",
-    "parent": "Investigation Action Setting",
-    "parentfield": "instant_action",
-    "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u062d\u0642\u0642 \u0627\u0644\u0646\u0638\u0627\u0645 \u0645\u0646 \u0627\u0644\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0648\u0637\u0646\u064a\u061f",
-    "weight": 10.0
-   },
-   {
-    "condition": "No",
-    "parent": "Investigation Action Setting",
-    "parentfield": "instant_action",
-    "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u0645 \u062a\u0648\u0642\u064a\u0639 \u0639\u0642\u062f \u0627\u0644\u062a\u0645\u0648\u064a\u0644 \u0648\u0633\u0646\u062f \u0627\u0644\u0627\u0645\u0631 \u0627\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0627\u064b \u061f",
-    "weight": 15.0
-   },
-   {
-    "condition": "No",
-    "parent": "Investigation Action Setting",
-    "parentfield": "instant_action",
-    "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u0645 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0633\u0627\u0628\u0642\u0629 \u0644\u0644\u0639\u0645\u064a\u0644 \u0628\u0627\u0644\u0627\u0636\u0627\u0641\u0629 \u0627\u0644\u0649 \u0635\u062d\u0629 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a\u061f",
-    "weight": 20.0
+    "question": "ايقاف الموظف بسبب وجود الاشتباه بعملية الاحتيال الداخلي",
+    "weight": 25.0
    }
   ],
   "instant_action_score": [
@@ -73,14 +139,7 @@
     "parentfield": "instant_action_score",
     "parenttype": "Investigation Action Setting",
     "potential_fraud": "Low",
-    "weight": 60.0
-   },
-   {
-    "parent": "Investigation Action Setting",
-    "parentfield": "instant_action_score",
-    "parenttype": "Investigation Action Setting",
-    "potential_fraud": "Medium",
-    "weight": 80.0
+    "weight": 70.0
    },
    {
     "parent": "Investigation Action Setting",
@@ -96,56 +155,32 @@
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u064a\u0648\u062c\u062f \u0627\u0634\u062a\u0628\u0627\u0647 \u0641\u064a \u0639\u062f\u0645 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0647\u0648\u064a\u0629 \u0627\u0644\u0639\u0645\u064a\u0644 \u0627\u0648 \u0627\u0644\u062f\u062e\u0644 \u0627\u0644\u062e\u0627\u0635 \u0628\u0627\u0644\u0639\u0645\u064a\u0644 ( \u0639\u062f\u0645 \u062a\u062d\u0642\u0642 \u064a\u0642\u064a\u0646 \u0648\u0631\u0642\u0645 \u0627\u0644\u0647\u0627\u062a\u0641 \u0648\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629)",
-    "weight": 20.0
+    "question": "اضافة المشتبه به الى قائمة المراقبة او الحظر",
+    "weight": 50.0
    },
    {
     "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u064a\u0648\u062c\u062f \u0645\u0633\u062a\u0646\u062f\u0627\u062a \u062a\u0645 \u0627\u0644\u062a\u0644\u0627\u0639\u0628 \u0628\u0647\u0627 \u0641\u064a \u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0639\u0645\u064a\u0644\u061f",
-    "weight": 20.0
+    "question": "تصعيد الحالة الى قسم المخاطر التشغيلية",
+    "weight": 35.0
    },
    {
     "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u0645 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0648\u0635\u0648\u0644 \u0631\u0645\u0632 \u0627\u0644\u062a\u062d\u0642\u0642 \u0627\u0644\u0649 \u0646\u0641\u0633 \u0631\u0642\u0645 \u0627\u0644\u062c\u0648\u0627\u0644 \u0627\u0644\u0645\u0633\u062c\u0644 \u0648\u0627\u0644\u0645\u062a\u062d\u0642\u0642 \u0645\u0646 \u0639\u0628\u0631 \u0627\u0644\u0646\u0638\u0627\u0645\u061f",
+    "question": "تصعيد الحالة الى قسم الامن السبراني",
     "weight": 10.0
    },
    {
-    "condition": "No",
+    "condition": "Yes",
     "parent": "Investigation Action Setting",
     "parentfield": "later_action",
     "parenttype": "Investigation Action Setting",
-    "question": "\u0641\u064a \u062d\u0627\u0644 \u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0639\u0645\u064a\u0644 \u0628\u064a\u0627\u0646\u0627\u062a\u0647 \u0627\u0644\u0634\u062e\u0635\u064a\u0629 \u061b \u0647\u0644 \u062a\u0645 \u0627\u0628\u0644\u0627\u063a \u0627\u0644\u0639\u0645\u064a\u0644 \u0628\u0636\u0631\u0648\u0631\u0629 \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u0627\u0642\u0631\u0628 \u0645\u0631\u0643\u0632 \u0644\u0644\u0634\u0631\u0637\u0629\u061f",
-    "weight": 5.0
-   },
-   {
-    "condition": "No",
-    "parent": "Investigation Action Setting",
-    "parentfield": "later_action",
-    "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u064a\u0648\u062c\u062f \u0627\u064a \u0639\u0645\u0644\u064a\u0627\u062a \u0627\u062d\u062a\u064a\u0627\u0644\u064a\u0629 \u0645\u0646 \u0642\u0628\u0644 \u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0634\u0631\u0643\u0629\u061f",
-    "weight": 30.0
-   },
-   {
-    "condition": "No",
-    "parent": "Investigation Action Setting",
-    "parentfield": "later_action",
-    "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u0645 \u0627\u0644\u062a\u0639\u0627\u0645\u0644 \u0645\u0639 \u0631\u0642\u0645 \u0627\u0644\u0647\u0627\u062a\u0641 \u0644\u0644\u0645\u0634\u062a\u0628\u0647 \u0628\u0647 \u0627\u0648 \u0627\u0644\u0645\u0648\u0642\u0639 \u0627\u0644\u0627\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645 \u0641\u064a \u0639\u0645\u0644\u064a\u0629 \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u0644 \u061f",
+    "question": "تصعيد الحالة الى قسم المبيعات",
     "weight": 10.0
-   },
-   {
-    "condition": "No",
-    "parent": "Investigation Action Setting",
-    "parentfield": "later_action",
-    "parenttype": "Investigation Action Setting",
-    "question": "\u0647\u0644 \u062a\u0645 \u0627\u0644\u062a\u0623\u0643\u064a\u062f \u0645\u0646 \u0642\u0633\u0645 \u0633\u064a\u0627\u0633\u0629 \u0627\u0644\u0627\u0626\u062a\u0645\u0627\u0646 \u0628\u0627\u0644\u0627\u0634\u062a\u0628\u0627\u0647 \u0641\u064a \u062c\u0647\u0629 \u0639\u0645\u0644 \u0627\u0644\u0639\u0645\u064a\u0644\u061f",
-    "weight": 5.0
    }
   ],
   "later_action_score": [
@@ -160,15 +195,8 @@
     "parent": "Investigation Action Setting",
     "parentfield": "later_action_score",
     "parenttype": "Investigation Action Setting",
-    "potential_fraud": "Low",
-    "weight": 60.0
-   },
-   {
-    "parent": "Investigation Action Setting",
-    "parentfield": "later_action_score",
-    "parenttype": "Investigation Action Setting",
     "potential_fraud": "Medium",
-    "weight": 80.0
+    "weight": 70.0
    },
    {
     "parent": "Investigation Action Setting",
@@ -178,7 +206,7 @@
     "weight": 100.0
    }
   ],
-  "modified": "2024-07-30 13:09:16.744353",
+  "modified": "2025-01-01 19:21:07.357126",
   "name": "Investigation Action Setting"
  }
 ]

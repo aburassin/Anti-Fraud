@@ -8,7 +8,7 @@ class InvestigationActionSetting(Document):
 	
 	def validate(self):
 		
-		self.check_percentage_is_correct()
+		# self.check_percentage_is_correct()
 		self.check_percentage_in_score()
 
 
