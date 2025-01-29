@@ -14,12 +14,15 @@
   "start_date",
   "end_date",
   "investigation_status",
+  "device_id",
   "column_break_sayag",
   "findings",
   "financial_fraud_method",
   "customer_application",
   "fraudulent_website",
   "fraudulent_phone_number",
+  "number_of_supect_section",
+  "suspect",
   "recommendations_section",
   "recommendations",
   "amended_from",
@@ -133,6 +136,22 @@
    "fieldname": "document",
    "fieldtype": "Table",
    "options": "Document Verification"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "label": "Device ID"
+  },
+  {
+   "fieldname": "number_of_supect_section",
+   "fieldtype": "Section Break",
+   "label": "Number of Supect"
+  },
+  {
+   "fieldname": "suspect",
+   "fieldtype": "Table",
+   "options": "Fraud Incident Suspect"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -147,7 +166,7 @@
    "link_fieldname": "fraud_investigation"
   }
  ],
- "modified": "2025-01-01 21:05:22.712822",
+ "modified": "2025-01-28 10:34:11.209858",
  "modified_by": "Administrator",
  "module": "Anti Fraud",
  "name": "Fraud Investigation",

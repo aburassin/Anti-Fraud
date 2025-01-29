@@ -1,0 +1,212 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Investigation Action Setting",
+  "forgery_instant_action": [
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "طلب اضافة العميل الى قائمة الاحتيال ( الحظر او المراقبة)",
+    "weight": 70.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "ايقاف الموظف بسبب وجود الاشتباه بعملية الاحتيال الداخلي",
+    "weight": 30.0
+   }
+  ],
+  "forgery_instant_action_score": [
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "No Fraud activities",
+    "weight": 40.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "Low",
+    "weight": 70.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "High",
+    "weight": 100.0
+   }
+  ],
+  "forgery_later_action": [
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "اضافة العميل الى قائمة الاحتيال ( الحظر او المراقبة)",
+    "weight": 75.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "تم التأكد من وجود موظف او اكثر شارك في عملية الاحتيال",
+    "weight": 20.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "وجود دليل كافي لوجود خطا في النظام تسبب في عملية الاحتيال",
+    "weight": 5.0
+   }
+  ],
+  "forgery_later_action_score": [
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "No Fraud activities",
+    "weight": 40.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "Low",
+    "weight": 70.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "forgery_later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "High",
+    "weight": 100.0
+   }
+  ],
+  "instant_action": [
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "قيام العميل بمشاركة المعلومات الشخصية ورمز التحقق مع الاخرين",
+    "weight": 50.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "وجود دليل كافي لوجود خطا في النظام تسبب في عملية الاحتيال",
+    "weight": 15.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "اضافة الجهاز المستخدم في عملية الاحتيال الى قائمة المراقبة",
+    "weight": 10.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "instant_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "ايقاف الموظف بسبب وجود الاشتباه بعملية الاحتيال الداخلي",
+    "weight": 25.0
+   }
+  ],
+  "instant_action_score": [
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "No Fraud activities",
+    "weight": 40.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "Low",
+    "weight": 70.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "instant_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "High",
+    "weight": 100.0
+   }
+  ],
+  "later_action": [
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "اضافة المشتبه به الى قائمة المراقبة او الحظر",
+    "weight": 50.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "تصعيد الحالة الى قسم المخاطر التشغيلية",
+    "weight": 35.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "تصعيد الحالة الى قسم الامن السبراني",
+    "weight": 10.0
+   },
+   {
+    "condition": "Yes",
+    "parent": "Investigation Action Setting",
+    "parentfield": "later_action",
+    "parenttype": "Investigation Action Setting",
+    "question": "تصعيد الحالة الى قسم المبيعات",
+    "weight": 10.0
+   }
+  ],
+  "later_action_score": [
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "No Fraud activities",
+    "weight": 40.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "Medium",
+    "weight": 70.0
+   },
+   {
+    "parent": "Investigation Action Setting",
+    "parentfield": "later_action_score",
+    "parenttype": "Investigation Action Setting",
+    "potential_fraud": "High",
+    "weight": 100.0
+   }
+  ],
+  "modified": "2025-01-01 19:21:07.357126",
+  "name": "Investigation Action Setting"
+ }
+]

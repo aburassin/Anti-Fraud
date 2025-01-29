@@ -4,7 +4,7 @@
   "doctype": "Workflow",
   "document_type": "Fraud Case",
   "is_active": 1,
-  "modified": "2024-08-07 09:08:25.120944",
+  "modified": "2025-01-12 16:46:30.043644",
   "name": "Fraud Case",
   "override_status": 0,
   "send_email_alert": 1,
@@ -112,7 +112,7 @@
    },
    {
     "action": "Approve",
-    "allow_self_approval": 0,
+    "allow_self_approval": 1,
     "allowed": "Officer Role",
     "condition": null,
     "next_state": "Approved by Officer Role",
@@ -124,7 +124,7 @@
    },
    {
     "action": "Reject",
-    "allow_self_approval": 0,
+    "allow_self_approval": 1,
     "allowed": "Officer Role",
     "condition": null,
     "next_state": "Rejected by Officer Role",
@@ -136,7 +136,7 @@
    },
    {
     "action": "Return",
-    "allow_self_approval": 0,
+    "allow_self_approval": 1,
     "allowed": "Officer Role",
     "condition": null,
     "next_state": "Draft (Returned By Officer Role)",
@@ -401,7 +401,7 @@
   "doctype": "Workflow",
   "document_type": "Fraud Incident",
   "is_active": 1,
-  "modified": "2024-08-07 09:08:39.225352",
+  "modified": "2025-01-12 16:46:17.496786",
   "name": "Fraud Incident",
   "override_status": 0,
   "send_email_alert": 1,
@@ -509,7 +509,7 @@
    },
    {
     "action": "Approve",
-    "allow_self_approval": 0,
+    "allow_self_approval": 1,
     "allowed": "Officer Role",
     "condition": null,
     "next_state": "Approved by Officer Role",
@@ -521,7 +521,7 @@
    },
    {
     "action": "Reject",
-    "allow_self_approval": 0,
+    "allow_self_approval": 1,
     "allowed": "Officer Role",
     "condition": null,
     "next_state": "Rejected by Officer Role",
@@ -533,7 +533,7 @@
    },
    {
     "action": "Return",
-    "allow_self_approval": 0,
+    "allow_self_approval": 1,
     "allowed": "Officer Role",
     "condition": null,
     "next_state": "Draft (Returned By Officer Role)",
